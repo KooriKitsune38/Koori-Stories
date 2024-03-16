@@ -7,4 +7,7 @@ scoreboard players remove @s k.StoryTimer 1
 execute if score @s k.StoryTimer matches ..0 run scoreboard players reset @s
 
 # Particles
-particle portal ~ ~ ~ 0 0 0 1 1 force
+    #> Copy data into storage
+    data modify storage kstories:variables tempParticles set from entity @e[type=marker,distance=..1,limit=1,tag=k.StoryMarker] data.playParticles
+    #> Display Particles
+    function kstories:interaction/show_particles with storage kstories:variables

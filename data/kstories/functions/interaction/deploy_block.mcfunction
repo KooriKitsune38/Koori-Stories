@@ -4,7 +4,7 @@
 tp ~ ~1.1 ~
 
 # Summon Marker
-summon marker ~ ~ ~ {Tags:["k.StoryMarker"],data:{Story:[],tempText:{},author:"",tempStory:[],tempString:""}}
+summon marker ~ ~ ~ {Tags:["k.StoryMarker"],data:{Story:[],tempText:{},author:"",tempStory:[],tempString:"",playParticles:"minecraft:glow"}}
 
 # Setblock
 setblock ~ ~ ~ lodestone
